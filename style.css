@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#player-inputs {
+    margin-bottom: 20px;
+}
+
+#player-inputs input {
+    margin: 5px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#start-game {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#start-game:hover {
+    background-color: #45a049;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+#gameboard div {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#gameboard div:hover {
+    background-color: #f1f1f1;
+}
+
+#controls {
+    margin-top: 10px;
+}
+
+#restart {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: #e53935;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
